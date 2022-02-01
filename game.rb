@@ -4,8 +4,8 @@ class game
   attr_accessor :p1 :p2
 
   def initialize
-    @p1 = player_1
-    @p2 = player_2
+    @p1 = Player.new("Player 1")
+    @p2 = Player.new("Player 2")
     turn = @p1
   end
   
@@ -54,5 +54,7 @@ class game
   def game_over?
     return winner == nil
   end
+
   
+
 end
