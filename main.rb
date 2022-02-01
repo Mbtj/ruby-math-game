@@ -1,2 +1,5 @@
-require './player'
-require './game'
+require './player.rb'
+require './game.rb'
+
+match = Game.new()
+match.run()
